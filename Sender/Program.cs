@@ -55,9 +55,8 @@
             Console.WriteLine("======================================================");
             Console.ReadKey();
 
-            // Generate a cancellation token - how to actually stop receivers processing lol...
+            // Generate a cancellation token 
             var cts = new CancellationTokenSource();
-
 
             var doneReceiving = InitializeReceiver(cts.Token);
             Console.ReadKey();
